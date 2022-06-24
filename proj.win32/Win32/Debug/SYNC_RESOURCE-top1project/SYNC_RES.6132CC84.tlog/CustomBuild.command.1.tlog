@@ -1,0 +1,20 @@
+^D:\PRAKTIKA\TOP1PROJECT\PROJ.WIN32\CMAKEFILES\848CD843EE18EFD293985BF154D42072\SYNC_RESOURCE-TOP1PROJECT.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying resources for top1project ..."
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PRAKTIKA\TOP1PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Praktika/top1project -BD:/Praktika/top1project/proj.win32 --check-stamp-file D:/Praktika/top1project/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
