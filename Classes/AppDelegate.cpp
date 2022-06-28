@@ -1,4 +1,4 @@
-#include "AppDelegate.h"
+п»ї#include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
@@ -12,16 +12,16 @@ AppDelegate::~AppDelegate()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
-    auto director = Director::getInstance(); // получаем экземпляр директора. Он требуется для перехода между сценами. Пока у нас только одна сцена
-    auto glview = director->getOpenGLView(); // получаем базовый вид просмотра OpenGL. Отрисовка будет происходить с помощью GL
+    auto director = Director::getInstance(); // РїРѕР»СѓС‡Р°РµРј СЌРєР·РµРјРїР»СЏСЂ РґРёСЂРµРєС‚РѕСЂР°. РћРЅ С‚СЂРµР±СѓРµС‚СЃСЏ РґР»СЏ РїРµСЂРµС…РѕРґР° РјРµР¶РґСѓ СЃС†РµРЅР°РјРё. РџРѕРєР° Сѓ РЅР°СЃ С‚РѕР»СЊРєРѕ РѕРґРЅР° СЃС†РµРЅР°
+    auto glview = director->getOpenGLView(); // РїРѕР»СѓС‡Р°РµРј Р±Р°Р·РѕРІС‹Р№ РІРёРґ РїСЂРѕСЃРјРѕС‚СЂР° OpenGL. РћС‚СЂРёСЃРѕРІРєР° Р±СѓРґРµС‚ РїСЂРѕРёСЃС…РѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ GL
     if (!glview) {
-        glview = GLViewImpl::create("Hello World"); // создаем окно просмотра
-        glview->setFrameSize(640, 480); // устанавливаем его размер (для настольных систем)
-        director->setOpenGLView(glview); // устанавливаем окно в базовый вид просмотра
+        glview = GLViewImpl::create("Hello World"); // СЃРѕР·РґР°РµРј РѕРєРЅРѕ РїСЂРѕСЃРјРѕС‚СЂР°
+        glview->setFrameSize(640, 480); // СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј РµРіРѕ СЂР°Р·РјРµСЂ (РґР»СЏ РЅР°СЃС‚РѕР»СЊРЅС‹С… СЃРёСЃС‚РµРј)
+        director->setOpenGLView(glview); // СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј РѕРєРЅРѕ РІ Р±Р°Р·РѕРІС‹Р№ РІРёРґ РїСЂРѕСЃРјРѕС‚СЂР°
     }
 
-    auto scene = HelloWorld::createScene(); // создаем нашу первую сцену
-    director->runWithScene(scene); // стартуем показ сцены
+    auto scene = HelloWorld::createScene(); // СЃРѕР·РґР°РµРј РЅР°С€Сѓ РїРµСЂРІСѓСЋ СЃС†РµРЅСѓ
+    director->runWithScene(scene); // СЃС‚Р°СЂС‚СѓРµРј РїРѕРєР°Р· СЃС†РµРЅС‹
 
     return true;
 }

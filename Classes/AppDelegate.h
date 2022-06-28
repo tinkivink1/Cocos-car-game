@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "cocos2d.h"
 
@@ -8,8 +8,8 @@ public:
     AppDelegate();
     virtual ~AppDelegate();
 
-    // наследие apple - систем
-    bool applicationDidFinishLaunching() override; // вызов после инициализации движка. Здесь можно записывать свой код инициализации окна и прочего
-    void applicationDidEnterBackground() override; // вызов при переводе приложения в фоновый режим
-    void applicationWillEnterForeground() override;// вызов при переводе приложения на передний план
+    // РЅР°СЃР»РµРґРёРµ apple - СЃРёСЃС‚РµРј
+    bool applicationDidFinishLaunching() override; // РІС‹Р·РѕРІ РїРѕСЃР»Рµ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РґРІРёР¶РєР°. Р—РґРµСЃСЊ РјРѕР¶РЅРѕ Р·Р°РїРёСЃС‹РІР°С‚СЊ СЃРІРѕР№ РєРѕРґ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РѕРєРЅР° Рё РїСЂРѕС‡РµРіРѕ
+    void applicationDidEnterBackground() override; // РІС‹Р·РѕРІ РїСЂРё РїРµСЂРµРІРѕРґРµ РїСЂРёР»РѕР¶РµРЅРёСЏ РІ С„РѕРЅРѕРІС‹Р№ СЂРµР¶РёРј
+    void applicationWillEnterForeground() override;// РІС‹Р·РѕРІ РїСЂРё РїРµСЂРµРІРѕРґРµ РїСЂРёР»РѕР¶РµРЅРёСЏ РЅР° РїРµСЂРµРґРЅРёР№ РїР»Р°РЅ
 };
