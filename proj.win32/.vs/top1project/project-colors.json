@@ -5,7 +5,17 @@
       "ProjectGuid": "b9251ca8-c93e-3a35-9000-a4266f22048a",
       "DisplayName": "top1project",
       "ColorIndex": 0
+    },
+    "3260bafc-3f42-3b6c-afa8-f973fdc71eec": {
+      "ProjectGuid": "3260bafc-3f42-3b6c-afa8-f973fdc71eec",
+      "DisplayName": "cocos2d",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

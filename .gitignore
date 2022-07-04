@@ -67,3 +67,5 @@ google-services.json
 */cocos2d.pch
 */cocos2d.lib
 */HELLOWORLDSCENE.ipch
+
+*.opendb
