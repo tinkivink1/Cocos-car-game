@@ -7,7 +7,7 @@ using namespace cocos2d;
 using namespace std;
 USING_NS_CC;
 
-class MainScene : public cocos2d::Layer // класс сцены
+class MainScene : public cocos2d::Layer // РєР»Р°СЃСЃ СЃС†РµРЅС‹
 {
 private:
     bool pressedW;
@@ -25,9 +25,9 @@ private:
 
     Sprite* background = cocos2d::Sprite::create("background.png");
 public:
-    static cocos2d::Scene* createScene(); // метод создания сцены
-    bool init() override; // метод инициализации
+    static cocos2d::Scene* createScene(); // РјРµС‚РѕРґ СЃРѕР·РґР°РЅРёСЏ СЃС†РµРЅС‹
+    bool init() override; // РјРµС‚РѕРґ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё
     void Update(float dt);
-    CREATE_FUNC(MainScene); // макрос, который раскрывается и генерирует экземпляр класса подконтрольный GC (GarbageCollector движка cocos-2dx)
+    CREATE_FUNC(MainScene); // РјР°РєСЂРѕСЃ, РєРѕС‚РѕСЂС‹Р№ СЂР°СЃРєСЂС‹РІР°РµС‚СЃСЏ Рё РіРµРЅРµСЂРёСЂСѓРµС‚ СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° РїРѕРґРєРѕРЅС‚СЂРѕР»СЊРЅС‹Р№ GC (GarbageCollector РґРІРёР¶РєР° cocos-2dx)
 };
 #endif // __GAME_SCENE_H__
