@@ -2,25 +2,35 @@
 #ifndef __GAME_SCENE_H__
 #define __GAME_SCENE_H__
 #include "cocos2d.h"
+#include "Player.h"
 using namespace cocos2d;
 using namespace std;
-class HelloWorld : public cocos2d::Layer // класс сцены
+
+class MainScene : public cocos2d::Layer // класс сцены
 {
-public:
+private: 
     bool pressedW;
     bool pressedA;
     bool pressedS;
     bool pressedD;
-    float player_speed = 8.0f;
-    const float kUpdateTick = 0.01f;
 
-    cocos2d::Sprite* player = cocos2d::Sprite::create("mainCar.png");
+    float player_speed = 0.0f;
+    float MAX_SPEED = 12.0f;
+    float ACCELERATION = 1.0f;
+    const float kUpdateTick = 0.05f;
+    cocos2d::Sprite* leftWall = cocos2d::Sprite::create("wall.png");
+    cocos2d::Sprite* rightWall = cocos2d::Sprite::create("wall.png");
+    cocos2d::Sprite* top = cocos2d::Sprite::create("top.png");
+    cocos2d::Sprite* bottom = cocos2d::Sprite::create("top.png");
+    cocos2d::Sprite* line = cocos2d::Sprite::create("line.png");
+    cocos2d::Sprite* redline = cocos2d::Sprite::create("redline.png");
 
+    Player player1 = 
+public:
     static cocos2d::Scene* createScene(); // метод создания сцены
     bool init() override; // метод инициализации
-    void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* unused_event);
-    void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* unused_event);
     void Update(float dt);
-    CREATE_FUNC(HelloWorld); // макрос, который раскрывается и генерирует экземпляр класса подконтрольный GC (GarbageCollector движка cocos-2dx)
+    //cocos2d::Rect rectOfSprite(cocos2d::Sprite* sprite);
+    CREATE_FUNC(MainScene); // макрос, который раскрывается и генерирует экземпляр класса подконтрольный GC (GarbageCollector движка cocos-2dx)
 };
 #endif // __GAME_SCENE_H__

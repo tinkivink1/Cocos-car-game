@@ -4,7 +4,10 @@
     <ClCompile Include="D:\Praktika\top1project\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Praktika\top1project\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="D:\Praktika\top1project\Classes\MainScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Praktika\top1project\Classes\Player.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="D:\Praktika\top1project\proj.win32\main.cpp">
@@ -18,19 +21,19 @@
     <ClInclude Include="D:\Praktika\top1project\Classes\AppDelegate.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Classes\MainScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Classes\Player.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
     <ClInclude Include="D:\Praktika\top1project\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
     <ClInclude Include="D:\Praktika\top1project\proj.win32\resource.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Praktika\top1project\Resources\CloseNormal.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\Praktika\top1project\Resources\CloseSelected.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\Praktika\top1project\Resources\HelloWorld.png">
+    <ClInclude Include="D:\Praktika\top1project\Resources\background.png">
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="D:\Praktika\top1project\Resources\fonts\Marker Felt.ttf">
@@ -39,11 +42,41 @@
     <ClInclude Include="D:\Praktika\top1project\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\hummerBlack.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\line.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\playerBlack.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\redline.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\regularPlayer.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
     <ClInclude Include="D:\Praktika\top1project\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
-    <ClInclude Include="HelloWorldScene.h">
-      <Filter>Source Files\Classes</Filter>
+    <ClInclude Include="D:\Praktika\top1project\Resources\top.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\wall.bmp">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\wall.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\weakPlayerBlack.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\wheel.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Praktika\top1project\Resources\Новый точечный рисунок.bmp">
+      <Filter>Resources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
